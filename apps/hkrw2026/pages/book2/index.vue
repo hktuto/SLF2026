@@ -141,7 +141,7 @@ onMounted(() => {
 
              <div class="btns">
                <ElButton v-if="book.book_link_HK" type="info" @click="openBooks(tObj('book_link_', book))">{{t("bookLink")}}</ElButton>
-               <ElButton v-if="book.ebook_link_hk" type="info" @click="openBooks(tObj('ebook_link_', book))">{{t("eBookLink")}}</ElButton>
+               <ElButton v-if="book.eBook_link_hk" type="info" @click="openBooks(tObj('eBook_link_', book))">{{t("eBookLink")}}</ElButton>
              </div>
               <div class="author">{{t('publisher')}} : {{tObj('publisher_', book)}}</div>
               <div class="author">{{t('publishYear')}} : {{book.year_HK}}</div>
