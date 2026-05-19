@@ -42,7 +42,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      STRAPI_URL: process.env.STRAPI_URL || "http://localhost:1337",
+      STRAPI_URL: process.env.STRAPI_URL || "http://localhost:1338",
       siteName: "香港悅讀周 Hong Kong Reading Week",
       siteDescription:
         "香港公共圖書館將於4月20日至26日舉辦「香港悅讀周2026」，主題為「閱讀／細味幸福」，並以正向思維、人際關係及良好社會氛圍為閱讀焦點。",

@@ -14,7 +14,7 @@ Set environment variables to configure the migration:
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `OLD_STRAPI_URL` | `https://library-2025-nq3wb.ondigitalocean.app` | URL of the old Strapi instance |
-| `NEW_STRAPI_URL` | `http://localhost:1337` | URL of the new Strapi instance |
+| `NEW_STRAPI_URL` | `http://localhost:1338` | URL of the new Strapi instance |
 | `OLD_API_TOKEN` | - | API token for old Strapi (if required) |
 | `NEW_API_TOKEN` | - | API token for new Strapi (if required) |
 | `SKIP_MEDIA` | `false` | Set to `true` to skip media file migration |
@@ -32,7 +32,7 @@ Basic migration that transfers content data without media files.
 pnpm migrate
 
 # Or with custom URLs
-OLD_STRAPI_URL=https://old-site.com NEW_STRAPI_URL=http://localhost:1337 pnpm migrate
+OLD_STRAPI_URL=https://old-site.com NEW_STRAPI_URL=http://localhost:1338 pnpm migrate
 ```
 
 ### Advanced Migration (`migrate-strapi-data-advanced.js`)

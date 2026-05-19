@@ -23,7 +23,7 @@ const https = require("https");
 const http = require("http");
 
 // Configuration
-const STRAPI_URL = process.env.STRAPI_URL || "http://localhost:1337";
+const STRAPI_URL = process.env.STRAPI_URL || "http://localhost:1338";
 const API_TOKEN = process.env.API_TOKEN;
 const DRY_RUN = process.env.DRY_RUN === "true";
 

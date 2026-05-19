@@ -38,7 +38,7 @@ const http = require("http");
 // Configuration
 const OLD_STRAPI_URL =
   process.env.OLD_STRAPI_URL || "https://library-2025-nq3wb.ondigitalocean.app";
-const NEW_STRAPI_URL = process.env.NEW_STRAPI_URL || "http://localhost:1337";
+const NEW_STRAPI_URL = process.env.NEW_STRAPI_URL || "http://localhost:1338";
 const OLD_API_TOKEN = process.env.OLD_API_TOKEN;
 const NEW_API_TOKEN = process.env.NEW_API_TOKEN;
 const SKIP_MEDIA = process.env.SKIP_MEDIA === "true";

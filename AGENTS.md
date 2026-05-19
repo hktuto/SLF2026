@@ -10,7 +10,7 @@ This is a **monorepo** for the Hong Kong Reading Week (香港悅讀周) website.
 - **Language Support**: Trilingual (English, Traditional Chinese 繁體中文, Simplified Chinese 簡體中文)
 - **Live URLs**: 
   - Frontend: https://hkrw.readingpromotion.gov.hk/
-  - Backend: Runs on server at port 1337
+  - Backend: Runs on server at port 1338
 
 ## Technology Stack
 
@@ -149,7 +149,7 @@ pnpm strapi                # Strapi CLI
 ### Frontend (apps/hkrw2026/)
 
 ```bash
-pnpm dev                   # Start Nuxt development server (http://localhost:3000)
+pnpm dev                   # Start Nuxt development server (http://localhost:3001)
 pnpm build                 # Build for production
 pnpm generate              # Generate static site
 pnpm preview               # Preview production build
@@ -161,13 +161,13 @@ pnpm postinstall           # Prepare Nuxt (runs automatically after install)
 ### Backend (.env)
 ```env
 HOST=0.0.0.0
-PORT=1337
+PORT=1338
 APP_KEYS="key1,key2"
 API_TOKEN_SALT=your_token_salt
 ADMIN_JWT_SECRET=your_jwt_secret
 TRANSFER_TOKEN_SALT=your_transfer_token_salt
 JWT_SECRET=your_jwt_secret
-FRONT_URL=http://localhost:3000
+FRONT_URL=http://localhost:3001
 
 # Database (for PostgreSQL)
 DATABASE_CLIENT=postgres
@@ -180,7 +180,7 @@ DATABASE_PASSWORD=strapi
 
 ### Frontend (.env)
 ```env
-STRAPI_URL=http://localhost:1337
+STRAPI_URL=http://localhost:1338
 ```
 
 ## Development Conventions
@@ -225,8 +225,8 @@ Currently, the project does not have automated tests configured. Manual testing 
 ### Production Setup
 - **Server**: Ubuntu server with Node.js
 - **Process Manager**: PM2 manages both backend and frontend
-- **Backend Port**: 1337
-- **Frontend Port**: 3000
+- **Backend Port**: 1338
+- **Frontend Port**: 3001
 - **Reverse Proxy**: Nginx (configured externally)
 
 ### Deployment Steps
@@ -293,7 +293,7 @@ CLEAN_BEFORE_MIGRATE=true EXCLUDE=half-an-hour,event pnpm migrate:advanced
 | Variable | Description | Default |
 |----------|-------------|---------|
 | `OLD_STRAPI_URL` | Source Strapi URL | https://library-2025-nq3wb.ondigitalocean.app |
-| `NEW_STRAPI_URL` | Target Strapi URL | http://localhost:1337 |
+| `NEW_STRAPI_URL` | Target Strapi URL | http://localhost:1338 |
 | `OLD_API_TOKEN` | API token for source | - |
 | `NEW_API_TOKEN` | API token for target | - |
 | `DRY_RUN` | Simulate without changes | false |

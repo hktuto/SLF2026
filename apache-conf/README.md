@@ -12,8 +12,8 @@ User → HTTPS (Cloudflare Edge Cert) → Cloudflare → HTTPS (Origin CA Cert) 
 
 | File | Description |
 |------|-------------|
-| `hkrw2026.readingpromotion.gov.hk.conf` | Frontend (Nuxt.js on port 3000) - **Current test domain** |
-| `hkrw2026-admin.readingpromotion.gov.hk.conf` | Backend (Strapi on port 1337) |
+| `hkrw2026.readingpromotion.gov.hk.conf` | Frontend (Nuxt.js on port 3001) - **Current test domain** |
+| `hkrw2026-admin.readingpromotion.gov.hk.conf` | Backend (Strapi on port 1338) |
 
 > **Note**: Frontend is currently using `hkrw2026.readingpromotion.gov.hk` for testing. Will be renamed to `hkrw.readingpromotion.gov.hk` after confirmation.
 

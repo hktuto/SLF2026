@@ -7,7 +7,7 @@ module.exports = {
       env: {
         NODE_ENV: "production",
         HOST: "0.0.0.0",
-        PORT: 1337,
+        PORT: 1338,
         APP_KEYS: "toBeModified1,toBeModified2",
         API_TOKEN_SALT: "tobemodified",
         ADMIN_JWT_SECRET: "tobemodified",
@@ -25,7 +25,7 @@ module.exports = {
       watch: false,
       env: {
         NODE_ENV: "production",
-        PORT: 3000,
+        PORT: 3001,
         STRAPI_URL: "https://hkrw2026-admin.readingpromotion.gov.hk",
       },
       // Log files
