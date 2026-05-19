@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "library-2025-backend",
+      name: "slf2026-backend",
       script: "pnpm",
       args: "start:backend",
       env: {
@@ -13,11 +13,11 @@ module.exports = {
         ADMIN_JWT_SECRET: "tobemodified",
         TRANSFER_TOKEN_SALT: "tobemodified",
         JWT_SECRET: "tobemodified",
-        FRONT_URL: "https://hkrw2026.readingpromotion.gov.hk",
+        FRONT_URL: "https://slf2026.readingpromotion.gov.hk",
       },
     },
     {
-      name: "library-2025-frontend",
+      name: "slf2026-frontend",
       script: "./apps/hkrw2026/.output/server/index.mjs",
       cwd: __dirname,
       instances: 1,
@@ -26,7 +26,7 @@ module.exports = {
       env: {
         NODE_ENV: "production",
         PORT: 3001,
-        STRAPI_URL: "https://hkrw2026-admin.readingpromotion.gov.hk",
+        STRAPI_URL: "https://slf2026-admin.readingpromotion.gov.hk",
       },
       // Log files
       log_file: "./logs/frontend_combined.log",
