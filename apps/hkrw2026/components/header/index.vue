@@ -86,13 +86,11 @@ const { data } = useAsyncData("menu", () =>
   .headerRight {
     flex: 1 1 auto;
     height: var(--header-height);
-    background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(20px);
   }
 }
 .logoContainer {
   height: var(--header-height);
-  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(20px);
   padding: 0 20px;
   border-top-right-radius: var(--app-radius);

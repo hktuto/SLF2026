@@ -22,6 +22,10 @@
   // gap: 12px;
   justify-content: flex-start;
   align-items: stretch;
+  background-image: url('/SLF2026_main_background.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 .body{
   width:100%;

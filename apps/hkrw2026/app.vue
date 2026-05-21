@@ -77,11 +77,11 @@ html {
   scroll-behavior: smooth;
   --app-padding: 15px;
   --footer-color: #4eb967;
-  --app-primary-color: #B65A7F;
-  --sx-color-primary:#B65A7F;
-  --el-color-primary: #B65A7F;
+  --app-primary-color: #8C7B35;
+  --sx-color-primary:#8C7B35;
+  --el-color-primary: #8C7B35;
   --sx-color-primary-container: #dc93a8;
-  --menu-bg: #B65A7F;
+  --menu-bg: #8C7B35;
   --body-width: 1280px;
   --header-height: 60px;
   --app-radius: 12px;
