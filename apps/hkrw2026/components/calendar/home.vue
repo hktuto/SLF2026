@@ -62,9 +62,9 @@ const calendarApp = createCalendar({
   locale: "en-US",
   views: [createViewMonthAgenda()],
   events: [],
-  minDate: "2026-04-01",
-  maxDate: "2026-04-30",
-  selectedDate: dayjs("2026-04-01").format("YYYY-MM-DD"),
+  minDate: "2026-07-01",
+  maxDate: "2026-08-31",
+  selectedDate: dayjs("2026-07-01").format("YYYY-MM-DD"),
   plugins: [eventsServicePlugin, calendarControls],
   callbacks: {
     onRender: ($app) => {
