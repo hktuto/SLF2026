@@ -20,7 +20,7 @@ const { t, tObj, currentLang } = useLang({
   register_EN: "Registration Method",
   contact_HK: "查詢/報名電話",
   contact_EN: "Contact",
-  preiod_HK: "報名時段",
+  preiod_HK: "開始報名日期",
   preiod_EN: "Registration Period",
   quota_HK: "名額",
   quota_EN: "Quota",
@@ -303,6 +303,7 @@ onMounted(() => {
 .content {
   background: #fff;
   // padding: 12px;
+  padding: var(--app-padding);
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
   // margin-bottom: 24px;

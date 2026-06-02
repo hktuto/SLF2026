@@ -133,6 +133,10 @@ html {
 
 .eventContent {
   margin-bottom: calc(var(--app-padding) / 2);
+  img {
+    max-width: 100%;
+    height: auto;
+  }
   table {
     width:100%;
     font-weight: initial;
