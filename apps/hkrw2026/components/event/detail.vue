@@ -21,7 +21,7 @@ const { t, tObj, currentLang } = useLang({
   contact_HK: "查詢/報名電話",
   contact_EN: "Contact",
   preiod_HK: "開始報名日期",
-  preiod_EN: "Registration Period",
+  preiod_EN: "Registration Opens",
   quota_HK: "名額",
   quota_EN: "Quota",
   na_HK: "不適用",
