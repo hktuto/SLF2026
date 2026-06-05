@@ -206,7 +206,7 @@ The project uses a custom i18n implementation via `useLang` composable:
 ```css
 --app-padding: 15px;
 --body-width: 1280px;
---header-height: 60px;
+--header-height: 80px;
 --app-radius: 12px;
 --footer-color: #4eb967;
 --app-primary-color: #7544e7;

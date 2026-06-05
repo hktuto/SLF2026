@@ -83,7 +83,7 @@ html {
   --sx-color-primary-container: #dc93a8;
   --menu-bg: #8C7B35;
   --body-width: 1280px;
-  --header-height: 60px;
+  --header-height: 80px;
   --app-radius: 12px;
   --el-select-input-color: #000;
   --el-menu-border-color: transparent;
