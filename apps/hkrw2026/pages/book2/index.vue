@@ -2,14 +2,12 @@
 const { find } = useStrapi();
 const route = useRoute();
 const catOptions = {
-  '運動': 'sports',
-  '旅遊': 'travel',
-  '成就': 'achievements',
-  '飲食': 'diet',
-  '成長': 'personal growth',
-  '挑戰': 'challenges',
-  '興趣': 'interests',
-  '關係': 'relationships'
+  '親子及STEAM工作坊': 'STEAM Workshops',
+  '青少年及成人工作坊': 'Teens and Adults Workshops',
+  '故事工作坊': 'Storytelling Workshops',
+  'A BUS': 'A BUS',
+  '從星空中自製幸福': 'Happy Star',
+  '閱讀X音頻體驗工作坊': 'Workshops',
 }
 const currentSelectedCatgory = ref();
 const filter = computed(() => {
@@ -73,22 +71,18 @@ const { tObj, currentLang, t } = useLang({
   publisherEN: "Publisher",
   publishYearHK: "出版年份",
   publishYearEN: "Publish Year",
-  '運動EN': 'Sports',
-  '旅遊EN': 'Travel',
-  '成就EN': 'Achievements',
-  '飲食EN': 'Diet',
-  '成長EN': 'Personal Growth',
-  '挑戰EN': 'Challenges',
-  '興趣EN': 'Interests',
-  '關係EN': 'Relationships',
-  '運動HK': '運動',
-  '旅遊HK': '旅遊',
-  '成就HK': '成就',
-  '飲食HK': '飲食',
-  '成長HK': '成長',
-  '挑戰HK': '挑戰',
-  '興趣HK': '興趣',
-  '關係HK': '關係',
+  '親子及STEAM工作坊EN': 'STEAM Workshops',
+  '青少年及成人工作坊EN': 'Teens and Adults Workshops',
+  '故事工作坊EN': 'Storytelling Workshops',
+  'A BUSEN': 'A BUS',
+  '從星空中自製幸福EN': 'Happy Star',
+  '閱讀X音頻體驗工作坊EN': 'Workshops',
+  '親子及STEAM工作坊HK': '親子及STEAM工作坊',
+  '青少年及成人工作坊HK': '青少年及成人工作坊',
+  '故事工作坊HK': '故事工作坊',
+  'A BUSHK': 'A BUS',
+  '從星空中自製幸福HK': '從星空中自製幸福',
+  '閱讀X音頻體驗工作坊HK': '閱讀X音頻體驗工作坊',
   'allHK': '全部',
   'allEN': 'All'
 });
@@ -132,7 +126,7 @@ onMounted(() => {
       <div v-if="data.data" class="booksGrid">
         <div v-for="book in data.data" :key="book.id" class="bookItem">
            <NuxtImg v-if="book.cover" class="mainImg" :src="imgUrlConverter(book.cover.url)" />
-           <NuxtImg v-else class="mainImg" :src="imgUrlConverter('/uploads/260415_book_thumbnail_kv_3b5047c269.png')" />
+           <NuxtImg v-else class="mainImg" :src="imgUrlConverter('/uploads/thumbnail_260415_book_thumbnail_kv_015285ec1f.png')" />
 
            <div class="content">
              <div class="cat">{{t(book.category_HK)}}</div>
