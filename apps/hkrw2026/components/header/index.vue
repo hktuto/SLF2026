@@ -96,8 +96,9 @@ const { data } = useAsyncData("menu", () =>
   border-top-right-radius: var(--app-radius);
 }
 .logo {
-  height: 100%;
+  height: 104px;
   max-width: 220px;
   cursor: pointer;
+
 }
 </style>
