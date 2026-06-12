@@ -4,9 +4,9 @@ const route = useRoute();
 const catOptions = {
   'A BUS': 'A BUS',
   '閱讀X音頻體驗工作坊': 'Workshops',
+  '故事工作坊': 'Storytelling Workshops',
   '親子及STEAM工作坊': 'STEAM Workshops',
   '青少年及成人工作坊': 'Teens and Adults Workshops',
-  '故事工作坊': 'Storytelling Workshops',
   '從星空中自製幸福': 'Happy Star',
 }
 const currentSelectedCatgory = ref();
