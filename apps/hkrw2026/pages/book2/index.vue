@@ -2,12 +2,12 @@
 const { find } = useStrapi();
 const route = useRoute();
 const catOptions = {
+  'A BUS': 'A BUS',
+  '閱讀X音頻體驗工作坊': 'Workshops',
   '親子及STEAM工作坊': 'STEAM Workshops',
   '青少年及成人工作坊': 'Teens and Adults Workshops',
   '故事工作坊': 'Storytelling Workshops',
-  'A BUS': 'A BUS',
   '從星空中自製幸福': 'Happy Star',
-  '閱讀X音頻體驗工作坊': 'Workshops',
 }
 const currentSelectedCatgory = ref();
 const filter = computed(() => {
