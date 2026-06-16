@@ -287,7 +287,7 @@ watch(
   display: none;
 }
 .sx__date-picker__month-view-header .sx__chevron-wrapper{
-  display: none;
+  /* display: none; */
 }
 </style>
 

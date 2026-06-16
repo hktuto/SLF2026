@@ -76,7 +76,7 @@ const { tObj, currentLang, t } = useLang({
   '故事工作坊EN': 'Storytelling Workshops',
   'A BUSEN': 'Outreach Activities',
   '從星空中自製幸福EN': 'Online Programme',
-  '閱讀X音頻體驗工作坊EN': 'Workshops',
+  '閱讀X音頻體驗工作坊EN': 'Reading x Sound Experiential Workshop',
   '親子及STEAM工作坊HK': '親子及STEAM工作坊',
   '青少年及成人工作坊HK': '青少年及成人工作坊',
   '故事工作坊HK': '故事工作坊',
@@ -114,15 +114,15 @@ onMounted(() => {
     <div v-if="pending" class="pending"></div>
     <template v-else>
     <UiSlider v-if="bookPage" :slides="bookPage.data.slides" />
-      <div class="title gradientText">
+      <!-- <div class="title gradientText">
         {{ route.query.category && data.data[0] ?  tObj('category_', data.data[0]) : t('name') }}
-      </div>
+      </div> -->
 
       <div class="tags">
         <div :class="{tag:true, selected: !route.query.category}" @click="selectCategory()">{{ t('all') }}</div>
         <div v-for="(value, key) in catOptions" :key="key" :class="{tag:true, selected: route.query.category === key}" @click="selectCategory(key)">{{ t(key) }}</div>
       </div>
-      <div><small>"For English, please scroll down"</small></div>
+      <!-- <div><small>"For English, please scroll down"</small></div> -->
       <div v-if="data.data" class="booksGrid">
         <div v-for="book in data.data" :key="book.id" class="bookItem">
            <NuxtImg v-if="book.cover" class="mainImg" :src="imgUrlConverter(book.cover.url)" />
