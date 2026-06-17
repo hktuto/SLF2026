@@ -117,6 +117,8 @@ function openProgram(event:any) {
   }
 }
 
+
+
 onMounted(() => {
   makeProgram(props.event);
 });
@@ -138,7 +140,7 @@ onMounted(() => {
       <Markdown
         v-if="event.content_EN"
         class="eventContent"
-        :source="t('content_')"
+        :source="replaceMarkdownContent(t('content_'))"
         html
       />
 

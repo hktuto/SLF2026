@@ -42,7 +42,7 @@ gtag("event", "page_view", {
         <Markdown
           v-if="data.data.content_EN"
           class="eventContent"
-          :source="tObj('content_', data.data)"
+          :source="replaceMarkdownContent(tObj('content_', data.data))"
           html
         />
       </div>

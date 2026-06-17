@@ -19,7 +19,7 @@ const {t, tObj} = useLang({});
       <Markdown
         v-if="tab.content_EN"
         class="tabContent"
-        :source="tObj('content_', tab)"
+        :source="replaceMarkdownContent(tObj('content_', tab))"
         html
       />
     </ElTabPane>

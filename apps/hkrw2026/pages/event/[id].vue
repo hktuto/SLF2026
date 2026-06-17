@@ -26,6 +26,8 @@ useSeoMeta({
   title: config.public.siteName + " | " + data.value?.data.title_EN,
 });
 
+
+
 onMounted(() => {
   const { gtag } = useGtag()
   gtag('event', 'page_view', {

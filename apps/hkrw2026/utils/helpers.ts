@@ -2,6 +2,13 @@ export function getStrapiData<T>(data: any): T {
   return data.data;
 }
 
+export function replaceMarkdownContent(string: string) {
+  // old admin url "http://47.242.219.240:1338"
+  // propduction url "https://slf.readingpromotion.gov.hk"
+  // replace old admin url with production url
+  return string.replace(/http:\/\/47\.242\.219\.240:1338/g, "https://slf2026-admin.readingpromotion.gov.hk");
+}
+
 export function imgUrlConverter(url: string) {
   const {
     public: { STRAPI_URL },

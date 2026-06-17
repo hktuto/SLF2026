@@ -68,7 +68,7 @@ onMounted(() => {
       <div v-if="data && data?.data[0]" class="content">
         <Markdown
           class="eventContent"
-          :source="tObj('content_', data?.data[0])"
+          :source="replaceMarkdownContent(tObj('content_', data?.data[0]))"
           html
         />
       </div>
