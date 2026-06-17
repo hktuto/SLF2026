@@ -37,7 +37,7 @@ export default defineNuxtConfig({
   ],
 
   gtag: {
-      id: 'G-B3NESPXYME'
+      id: 'G-7JZWV60NKL'
     },
 
   runtimeConfig: {
