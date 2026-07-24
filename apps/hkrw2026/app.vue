@@ -5,7 +5,7 @@
       <Analytics />
     </NuxtLayout>
     <!-- <Rainbow /> -->
-    <ElDialog v-model="dialogShow" append-to-body :before-close="closePopup">
+    <ElDialog v-model="dialogShow" width="90%" append-to-body :before-close="closePopup">
       <!-- {{ tObj("content_", content) }} -->
        <Markdown v-if="content.content_HK" class="eventContent" :source="tObj('content_', content)" html />
     </ElDialog>
@@ -31,10 +31,10 @@ async function getPopup() {
   if (item && item.data.title_HK) {
     content.value = item.data;
     const storage = localStorage.getItem("popup-date");
-    if (!storage || storage !== item.data.updatedAt) {
-      console.log();
-      dialogShow.value = true;
-    }
+    dialogShow.value = true;
+    // if (!storage || storage !== item.data.updatedAt) {
+    //   dialogShow.value = true;
+    // }
   }
 }
 
@@ -162,9 +162,11 @@ html {
       }
       td{
         padding: 12px;
-        white-space: nowrap;
+        @media(min-width: 1024px){
+          white-space: nowrap;
+        }
         &:last-child {
-          white-space: break-spaces;
+          white-space: break-spaces !important;
           border-left: 1px solid #eee;
         }
       }
