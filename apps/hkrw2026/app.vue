@@ -6,13 +6,14 @@
     </NuxtLayout>
     <!-- <Rainbow /> -->
     <ElDialog v-model="dialogShow" append-to-body :before-close="closePopup">
-      {{ tObj("content_", content) }}
-      <!-- <Markdown v-if="content.content_EN" class="eventContent" :source="tObj('content_', content)" html /> -->
+      <!-- {{ tObj("content_", content) }} -->
+       <Markdown v-if="content.content_HK" class="eventContent" :source="tObj('content_', content)" html />
     </ElDialog>
   </div>
 </template>
 
 <script lang="ts" setup>
+import Markdown from "vue3-markdown-it";
 import { useEvents } from "~/composables/event";
 const dialogShow = ref(false);
 
@@ -141,25 +142,29 @@ html {
     width:100%;
     font-weight: initial;
     border-collapse: collapse;
-    border: 1px solid var(--app-primary-color);
+    /*border: 1px solid var(--app-primary-color);*/
     thead{
       th {
         padding: 6px;
         text-align: left;
-        background: var(--app-primary-color);
+        /*background: var(--app-primary-color);*/
         color: #fff;
       }
     }
     tbody{
+      vertical-align: top;
       tr{
          border-bottom: 1px solid #eee;
+
          &:last-child{
            border-bottom: none;
          }
       }
       td{
         padding: 12px;
+        white-space: nowrap;
         &:last-child {
+          white-space: break-spaces;
           border-left: 1px solid #eee;
         }
       }
