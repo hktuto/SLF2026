@@ -79,7 +79,7 @@ let calendarApp = createCalendar({
   locale: "en-US",
   isDark: false,
   minDate: "2026-07-01",
-  maxDate: "2026-07-31",
+  maxDate: "2026-08-31",
   selectedDate: dayjs("2026-07-01").format("YYYY-MM-DD"),
   plugins: [eventsServicePlugin, calendarControls],
   events: [],
