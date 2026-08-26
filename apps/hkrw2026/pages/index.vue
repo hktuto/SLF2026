@@ -26,7 +26,7 @@ const { data, pending } = useAsyncData("home", () =>
 const readMoreIndex = ref<number[]>([]);
 const displayHomeMenu = computed(() => {
   if (!data.value || !data.value.data.menu) return [];
-  return data.value.data.menu.map((item: any) => {
+  return data.value.data.menu.filter(m => m.label_EN && m.show).map((item: any) => {
     const readMoreItems = item.subMenu.filter(
       (item: any) => item.showInReadMore && item.show,
     );
@@ -51,7 +51,7 @@ gtag("event", "page_view", {
   page_title: config.public.siteName + " | " + "Home",
   page_location: window.location.href,
 });
-function calculateId(st:any){
+function calculateId(st: any) {
   return st.trim().replaceAll(' ', '_')
 }
 
